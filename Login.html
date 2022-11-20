@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign In</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="Login.js"></script>
+</head>
+
+<div id="top_bar">
+    <div>Sign In</div>
+</div>
+
+<div class="column">
+    <div id="side_bar">
+        <div><a href="MainPage.html">Home</a></div>
+        <div><a href="Upcoming.html">Upcoming Games</a></div>
+        <div><a href="AboutUs.html">About Us</a></div>
+        <div><a href="ContactForm.html">Contact Us</a></div>
+        <div><a href="SignUp.html">Create Account</a></div>
+        <div><a href="Login.html">Sign In</a></div>
+    </div>
+
+    <div id="form">
+        <b>Log in to access your account. <br>(email is rain@gmail.com, password is 1234)</b>
+
+        <form name="login" onsubmit="return validateForm()">
+            <br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <input type="submit" value="Submit">
+
+            <div id="error"></div>
+          </form> 
+    </div>
+</div>
+
+<div id="footer">
+    <h2>DoublePunch</h2>
+    <h3>Owned and Operated by The Joel Miller Foundation</h3>
+    <p>&copy; The Joel Miller Foundation, 5th Floor, 601 West 2nd Street, Austin, TX 78701.</p>
+</div>
+
+</html>

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    font-family: 'Impact', fantasy;
+    text-decoration: none;
+}
+
+b {
+    font-size: 20px;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+figcaption {
+    font-size: 75%;
+    font-family: 'Arial', Helvetica, sans-serif;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#top_bar {
+    text-align: center;
+    font-family: 'Impact', fantasy;
+    color: white;
+    background-color: rgb(255, 102, 0);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+}
+
+#side_bar {
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    width: 15%;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#side_bar>div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#article {
+    margin: 1em 2em 3em 2em;
+    width: 70%
+}
+
+.main_photo {
+    width: 100%;
+}
+
+#text1 {
+    text-align: justify;
+    font-size: 80%;
+    font-family: 'Impact', fantasy;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100%;
+}
+
+#text2 {
+    text-align: justify;
+    font-family: 'Arial', Helvetica, sans-serif;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100%;
+}
+
+#credits {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(124, 124, 124);
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    height: 10em;
+}
+
+@media screen and (max-width: 80em) {
+
+    #article {
+        width: 85%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #main_photo {
+        width: 100%;
+    }
+
+    #text {
+        width: 100%;
+    }
+
+    #footer {
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
