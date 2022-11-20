@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    font-family: 'Impact', fantasy;
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid rgb(221,221,221);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    background-color: rgb(255, 102, 0);
+}
+
+th, td {
+    padding: 8px;
+}
+
+#top_bar {
+    text-align: center;
+    font-family: 'Impact', fantasy;
+    color: white;
+    background-color: rgb(255, 102, 0);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#top_bar>div {
+    font-size: 3em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.column {
+    display: flex;
+}
+
+#side_bar {
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    width: 15%;
+    padding-top: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#side_bar>div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#games {
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+#design tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#games>p {
+    font-size: 20px;
+    font-family: 'Impact', fantasy;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(124, 124, 124);
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    height: 10em;
+}
+
+@media screen and (max-width: 80em) {
+
+    #footer {
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    font-family: 'Impact', fantasy;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+input[type=password] {
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+#top_bar {
+    text-align: center;
+    font-family: 'Impact', fantasy;
+    color: white;
+    background-color: rgb(255, 102, 0);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#top_bar>div {
+    font-size: 3em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.column {
+    display: flex;
+}
+
+#side_bar {
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    width: 15%;
+    padding-top: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#side_bar>div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#form {
+    background-color: rgb(221, 238, 249);
+    font-family: 'Arial', Helvetica, sans-serif;
+    width: 40em;
+    padding: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(124, 124, 124);
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    height: 10em;
+}
+
+@media screen and (max-width: 80em) {
+
+    #footer {
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
