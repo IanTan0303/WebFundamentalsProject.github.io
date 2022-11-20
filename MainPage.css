@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    font-family: 'Impact', fantasy;
+    text-decoration: none;
+}
+
+#top_bar {
+    text-align: center;
+    font-family: 'Impact', fantasy;
+    color: white;
+    background-color: rgb(255, 102, 0);
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#doublepunch {
+    font-size: 3em;
+    padding-top: 8px;
+}
+
+#description {
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
+
+#column {
+    display: flex;
+}
+
+#side_bar {
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    width: 15%;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#side_bar>div {
+    font-family: 'Impact', fantasy;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#content {
+    margin: 1em;
+    width: 85%;
+}
+
+#top_article {
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: rgb(233, 233, 233);
+    display: block;
+    border-bottom: 1em;
+}
+
+#top_photo {
+    margin-top: 1em;
+    width: 100%;
+}
+
+#top_flex {
+    width: 100%;
+}
+
+.article {
+    font-size: 1em;
+    color: black;
+    width: 33%;
+    padding-bottom: 5px;
+    margin: 1em;
+    background-color: rgb(233, 233, 233);
+}
+
+.photo {
+    width: 100%;
+}
+
+.space {
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
+}
+
+.flexbox_article {
+    display: flex;
+    width: 100%;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(124, 124, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    height: 10em;
+}
+
+@media (max-width: 68em) {
+    #side_bar {
+        min-width: 5em;
+    }
+
+    #top_photo {
+        width: 100%;
+    }
+
+    #top_flex {
+        width: 100%;
+    }
+
+    .flexbox_article {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .photo {
+        width: 15em;
+    }
+
+    .article {
+        display: flex;
+        width: 95%;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    #footer {
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 40em) {
+    .photo {
+        width: 10em;
+    }
+}
