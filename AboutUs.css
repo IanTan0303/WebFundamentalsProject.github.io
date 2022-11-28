@@ -36,6 +36,12 @@ figcaption {
     width: 100%;
 }
 
+#top_bar>div {
+    font-size: 3em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .column {
     display: flex;
 }
